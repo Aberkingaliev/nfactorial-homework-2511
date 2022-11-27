@@ -1,0 +1,6 @@
+.Feed-container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 300px;
+}

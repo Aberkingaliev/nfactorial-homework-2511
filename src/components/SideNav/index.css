@@ -1,0 +1,36 @@
+.SideNav-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100vh;
+    width: 255px;
+    padding: 0px 24px 0px 24px;
+    border-right: 1px solid rgba(0, 0, 0, 0.057);
+    animation-name: sideAppereance;
+    animation-duration: 1s;
+    background-color: #fff;
+}
+
+.Bottom-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+
+.Top-side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+@keyframes sideAppereance {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}

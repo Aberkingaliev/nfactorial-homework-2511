@@ -1,0 +1,19 @@
+.item-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    gap: 16px;
+    width: fit-content;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 100px;
+}
+.item-container:hover{
+    background-color: rgba(0, 0, 0, 0.106);
+}
+.item-container:active{
+    font-weight: 700;
+}

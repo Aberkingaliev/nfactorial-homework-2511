@@ -1,0 +1,65 @@
+.Tweet-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.057); */
+    border-top: 1px solid rgba(0, 0, 0, 0.057);
+    width: 100%;
+
+}
+.Tweet-container:hover{
+    background-color: #F7F7F7;
+}
+
+
+.Tweet-content{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 8px;
+}
+
+.Tweet-author{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+}
+
+.Tweet-toolbar{
+    display: flex;
+    flex-direction: row;
+    gap: 72px;
+}
+
+.Tool{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    border-radius: 100px;
+    gap: 8px;
+    font-size: 14px;
+    color: #566370;
+}
+.Tool:hover{
+    background-color: #1d9cf024;
+    color: #1d9bf0;
+}
+
+
+a{
+    color: #000000
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.Tweet-left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+}
