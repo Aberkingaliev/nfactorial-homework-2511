@@ -1,47 +1,7 @@
-import Avatar from "../../../assets/avatars/elon.jpeg"
 import GenerateIcon from "../../Icons/GenerateIcon"
 import './index.css'
 
-const Tweet = () => {
-  const Tweets = [
-    {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 27",
-      Content: "Thanksgiving cuisine is such a delightful symphony of flavor!"
-    }, {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 26",
-      Content: "Thank's for attention, it'is my first tweet!"
-    }, {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 26",
-      Content: "Thank's for attention, it'is my first tweet!"
-    }, {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 26",
-      Content: "Thank's for attention, it'is my first tweet!"
-    }, {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 26",
-      Content: "Thank's for attention, it'is my first tweet!"
-    }, {
-      Avatar: Avatar,
-      Author: "Abdgali Yerkingaliyev",
-      Profile: "@aberkingaliev",
-      Date: "Nov 26",
-      Content: "Thank's for attention, it'is my first tweet!"
-    }
-  ]
+const Tweet = ({Avatar, Author, Profile, Date, Content}) => {
   const Toolbar_Icons = [
     {
       IconName: "CommentGray",
@@ -57,14 +17,15 @@ const Tweet = () => {
       Amount: ""
     }
   ]
+  const searchTweets = () => {
+
+  }
   return ( 
     <>
-    {Tweets.map((tweet) => {
-      return (
         <div className="Tweet-container">
           <div class="Tweet-left">
             <img
-              src={tweet.Avatar}
+              src={Avatar}
               style={{
               width: '50px',
               height: '50px',
@@ -73,17 +34,17 @@ const Tweet = () => {
             <div className="Tweet-content">
               <div className="Tweet-author">
                 <a href="./">
-                  <b>{tweet.Author}</b>
+                  <b>{Author}</b>
                 </a>
                 <p style={{
                   color: '#566370'
-                }}>{tweet.Profile} ·
+                }}>{Profile} ·
                 </p>
                 <p style={{
                   color: '#566370'
-                }}>{tweet.Date}</p>
+                }}>{Date}</p>
               </div>
-              <p>{tweet.Content}</p>
+              <p>{Content}</p>
               <div className="Tweet-toolbar">
                 {Toolbar_Icons.map((value) => {
                   return (
@@ -98,8 +59,6 @@ const Tweet = () => {
 
           <GenerateIcon Name="More" Size="20px"/>
         </div>
-      )
-    })}
     </>
     )
 }

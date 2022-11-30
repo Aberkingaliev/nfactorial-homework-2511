@@ -23,7 +23,6 @@ body{
 .App{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 0px 80px 0px 80px;
 
 }
